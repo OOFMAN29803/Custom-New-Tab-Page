@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
+<title>Search...</title>
+</head>
+<body>
+<center>
+<button class="googleButton" onclick = "window.location.href = 'https://www.google.com'">Need Google?</button>
+<p id="timeAmbience">Welcome. The Time is: 00:00</p>
+<input id="inputy"><button class="searchButton" onclick="search()">Search</button></input>
+<br>
+<button onclick="searchwebsite()" class="webber">Direct Website?</button>
+<div class="linkContainer">
+<button class="LinkButton" onclick="window.location.href = 'https://allonetech.site'">AllOneTech<br><small>Company Stuff</small></button><button onclick="window.location.href = 'https://mail.google.com'" class="LinkButton">Gmail<br><small>Email Stuff</small></button><button class="LinkButton" onclick="window.location.href = 'https://chatgpt.com'">ChatGPT<br><small>AI Stuff</small></button>
+</div>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
+ function searchwebsite() {
+ var inputsearch = document.getElementById("inputy").value
+window.location.href = "https://" + inputsearch
+}
+
+ function search() {
+ var inputsearch = document.getElementById("inputy").value
+window.location.href = "https://www.google.com/search?q=" + inputsearch + "&newwindow=1&sca_esv=93dba3a330e5cf9e&sxsrf=ADLYWILVzMa7yCjXh7ENEehwwNJhxU3yWw%3A1731374135572&ei=N6wyZ6LVIuWd4-EPyJPS0QI&ved=0ahUKEwjizMuiz9WJAxXlzjgGHciJNCoQ4dUDCA8&uact=5&oq=no+clue&gs_lp=Egxnd3Mtd2l6LXNlcnAiB25vIGNsdWUyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEcyBBAAGEdI7klQzTZY40hwAHgCkAECmAEAoAEAqgEAuAEDyAEA-AEBmAIBoAIKmAMAiAYBkAYIkgcBMaAHAA&sclient=gws-wiz-serp"
+}
+function updateTime() {
+  const currentTime = new Date();
+  const hours = currentTime.getHours();
+  const minutes = currentTime.getMinutes();
+  const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+  var time = document.getElementById("timeAmbience");
+  time.innerHTML = "The time is " + hours.toString().padStart(2, '0') + ":" + minutes.toString().padStart(2, '0');
+
+}
+var wage = document.getElementById("inputy")
+wage.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") { 
+        validate(e);
+    }
+});
+
+function validate(e) {
+    search()
+}
+
+var wage2 = document.getElementById("inputy")
+wage2.addEventListener("keydown", function (e) {
+    if (e.code === "Enter" && e.code === "W") { 
+        validate(e);
+    }
+});
+
+function validate(e) {
+    search()
+}
+
+
+
+setInterval(updateTime, 10)
+
+</script>
+</body>
+</html>

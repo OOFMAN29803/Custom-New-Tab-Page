@@ -1,0 +1,149 @@
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+background-color: #99F0F0;
+padding: 0px;
+margin: 0px;
+background-image: url(wallpaper.jpg);
+background-size: cover;
+ background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+}
+p, a, h1, small, h2, button, svg, div {
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+
+#inputy {
+width: 60%;
+height: 4vh;
+outline: none;
+border: 3px solid #B4CFBB;
+background-color: #DEFFE7;
+border-radius: 10px;
+color: #000000;
+padding: 4px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+font-weight: 600;
+transition: 0.3s ease;
+margin-top: 100px;
+font-size: 15px;
+}
+#inputy:focus {
+background-color: #88A88D;
+border: 3px solid #657D69;
+}
+
+.searchButton {
+	width: 100px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+height: 5vh;
+padding: 5px;
+padding-top: 2px;
+font-weight: 700;
+border: 3px solid #5964C2;
+border-radius: 5px;
+background-color: #7583FF;
+color: white;
+font-size: 20px;
+transition: 0.3s ease;
+margin-left: 10px;
+margin-top: 5px;
+}
+
+.searchButton:hover {
+background-color: #5C67C9;
+border: 3px solid #31376B;
+
+}
+
+#timeAmbience {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.linkContainer {
+	width: 50%;
+	height: 200px;
+	margin-top: 100px;
+	background-color: #428EFF;
+	border: 3px solid #3572CC;
+	border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+.webber {
+	width: 200px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+height: 3vh;
+padding: 5px;
+padding-top: 2px;
+font-weight: 700;
+border: 3px solid #5964C2;
+border-radius: 5px;
+background-color: #7583FF;
+color: white;
+font-size: 10px;
+padding-bottom: 2px;
+transition: 0.3s ease;
+margin-left: 10px;
+display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+margin-top: 5px;
+}
+
+.webber:hover {
+background-color: #5C67C9;
+border: 3px solid #31376B;
+
+}
+
+.LinkButton {
+	background-color: #7DC7FF;
+	border: 3px solid #5D93BD;
+	border-radius: 10px;
+	margin-left: 5px;
+	width: 30%;
+	font-size: 25px;
+	margin-top: 10px;
+	transition: 0.2s ease;
+	height: 180px;
+}
+
+.LinkButton:hover {
+	background-color: #3E79BD;
+	border: 3px solid #2E5A8C;
+}
+
+.weatherstuff {
+	width: 40%;
+	margin-top: 50px;
+}
+
+.googleButton {
+	width: 7%;
+	height: 50px;
+	border-radius: 10px;
+	position: fixed;
+	top: 1%;
+	left: 1%;
+	background-color: #4086FF;
+	border: 3px solid #3269C7;
+	transition: 0.2s ease;
+}
+
+.googleButton:hover {
+	background-color: #2D59C2;
+	border: 3px solid #264CA6;
+}
